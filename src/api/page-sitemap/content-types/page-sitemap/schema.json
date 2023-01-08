@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_sitemaps",
+  "info": {
+    "singularName": "page-sitemap",
+    "pluralName": "page-sitemaps",
+    "displayName": "Page - Sitemap",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "website-blocks.property-listing",
+        "website-blocks.cities",
+        "website-blocks.banner-image",
+        "website-blocks.reviews"
+      ]
+    }
+  }
+}

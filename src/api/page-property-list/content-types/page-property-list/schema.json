@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_property_lists",
+  "info": {
+    "singularName": "page-property-list",
+    "pluralName": "page-property-lists",
+    "displayName": "Page - Property List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pricePerNight": {
+      "type": "float"
+    },
+    "thumbnailImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "location": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::list-location.list-location",
+      "inversedBy": "page_property_lists"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "page_property_lists"
+    },
+    "numberOfBedrooms": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::number-of-bedroom.number-of-bedroom"
+    },
+    "description": {
+      "type": "text"
+    },
+    "numberOfBathrooms": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::number-of-bathroom.number-of-bathroom",
+      "inversedBy": "page_property_lists"
+    },
+    "facilities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::facilitie.facilitie",
+      "inversedBy": "page_property_lists"
+    }
+  }
+}

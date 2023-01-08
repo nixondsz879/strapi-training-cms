@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "number_of_bedrooms",
+  "info": {
+    "singularName": "number-of-bedroom",
+    "pluralName": "number-of-bedrooms",
+    "displayName": "NumberOfBedroom"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Beds": {
+      "type": "integer"
+    }
+  }
+}

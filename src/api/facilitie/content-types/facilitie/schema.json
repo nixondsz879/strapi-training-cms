@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities",
+  "info": {
+    "singularName": "facilitie",
+    "pluralName": "facilities",
+    "displayName": "Facilities"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "page_property_lists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page-property-list.page-property-list",
+      "mappedBy": "facilities"
+    }
+  }
+}

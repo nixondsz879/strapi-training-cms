@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_component_reviews",
+  "info": {
+    "displayName": "Review",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "page_property_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-property-list.page-property-list"
+    },
+    "Nights": {
+      "type": "integer"
+    },
+    "Review": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

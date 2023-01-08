@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_properties",
+  "info": {
+    "displayName": "Property",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-property-list.page-property-list"
+    }
+  }
+}

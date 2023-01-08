@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_website_blocks_property_listings",
+  "info": {
+    "displayName": "Property Listing",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "property_list": {
+      "displayName": "Property",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.property"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_website_blocks_reviews",
+  "info": {
+    "displayName": "Reviews",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.review"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

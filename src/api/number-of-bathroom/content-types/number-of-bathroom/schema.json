@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "number_of_bathrooms",
+  "info": {
+    "singularName": "number-of-bathroom",
+    "pluralName": "number-of-bathrooms",
+    "displayName": "NumberOfBathrooms"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "numberOfBathrooms": {
+      "type": "integer"
+    },
+    "page_property_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-property-list.page-property-list",
+      "mappedBy": "numberOfBathrooms"
+    }
+  }
+}

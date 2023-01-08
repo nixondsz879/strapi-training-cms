@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_website_blocks_cities",
+  "info": {
+    "displayName": "Cities",
+    "icon": "braille",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Cities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.city"
+    }
+  }
+}
